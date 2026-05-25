@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int solve(int a,int b,char op){
+    // Prefix = op val1 val2
+    if(op=='+') return a+b;
+    else if(op=='-') return a-b;
+    else if(op=='*') return a*b;
+    else return a/b;
+}
+
+int main(){
+    string s = "-/*+79483";
+    stack<int>val;
+    for(int i=s.length()-1;i>=0;i--){
+        if(s[i]>=48 && s[i]<=57)  val.push(s[i]-48);
+        else{
+            int val1 = val.top();
+            val.pop();
+            int val2 = val.top();
+            val.pop();
+            int ans = solve(val1,val2,s[i]);
+            val.push(ans);
+        }     
+    }
+        cout<<val.top()<<endl;
+    }

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "Basic.C": "cpp",
+        "iostream": "cpp",
+        "Remainder.C": "cpp",
+        "bool.C": "cpp"
+    }
+}
