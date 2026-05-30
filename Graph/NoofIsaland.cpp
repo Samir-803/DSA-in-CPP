@@ -15,7 +15,7 @@ void bfs(vector<vector<int>>& grid, int ro, int co, vector<vector<int>>& vis){
             int r = row + d;
             int c = col + x;
             if(r>=0 && r<grid.size() && c>=0 && 
-            c<grid[0].size() && vis[r][c]==0 && grid[r][c] == 1){
+            c<grid[0].size() && vis[r][c]==0 && grid[r][c] == 1){ 
                 q.push({r, c});
                 vis[r][c] = 1;
             }
