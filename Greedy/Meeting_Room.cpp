@@ -2,7 +2,6 @@
 using namespace std;
 // If any Leetcode problem is premium search that que in lintcode
 
-
 int minMetingRooms(vector<vector<int>>& v){
     vector<int> start, end;
     for(auto el : v){

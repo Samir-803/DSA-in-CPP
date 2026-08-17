@@ -14,6 +14,7 @@ void subarray(vector<int> v,int arr[],int idx,int n){
         subarray(v,arr,idx+1,n);
     }
 }
+
 int main(){
     int n;
     cout<<"Enter the size of array : ";

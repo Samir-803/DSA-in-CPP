@@ -3,6 +3,9 @@
 #include<list> 
 using namespace std; 
 
+// The Second Method is Using Disjoint Set in that you need to travels in the node 
+// and if the parent[node] == node then do cnt++ and la
+// i mean just different ultimate parent you need to find
 vector<list<int > > graph;
 void addedge(int src, int dest, bool bi_dir = true){
     graph[src].push_back(dest);

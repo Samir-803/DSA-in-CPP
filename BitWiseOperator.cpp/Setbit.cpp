@@ -4,7 +4,7 @@
 using namespace std;
 
 int setbit(int num){
-    string ans;
+    string ans = "";
     int count = 0;
     while(num>0){
         if(num%2==0){
